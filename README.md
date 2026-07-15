@@ -38,16 +38,3 @@ Browser akan otomatis terbuka ke `http://localhost:8501`.
 2. Aplikasi otomatis memproses (log-transform, scaling) persis seperti saat training,
    lalu memprediksi segmen tiap pelanggan pakai model yang sudah ada.
 3. Lihat visualisasi & unduh hasilnya sebagai CSV baru berisi kolom `Cluster`.
-
-## Penting: model ini khusus untuk skema data Fashion Retail Sales
-
-Model `.joblib` ini dilatih khusus pada dataset **Fashion Retail Sales** (kolom-kolom
-di atas). Kalau kamu ingin pakai skema data lain (misalnya dataset RFM Global Fashion
-Retail Stores), model perlu dilatih ulang dulu di notebook yang sesuai, baru
-`.joblib`-nya diganti di folder ini.
-
-## Deploy supaya bisa diakses orang lain (opsional)
-
-Kalau ingin dipakai orang awam tanpa install apa pun di komputer mereka, folder ini
-bisa di-deploy gratis ke **Streamlit Community Cloud** (streamlit.io/cloud):
-push folder ini ke repository GitHub, lalu hubungkan repo tersebut di Streamlit Cloud.
